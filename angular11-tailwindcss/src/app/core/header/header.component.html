@@ -16,7 +16,7 @@
         {{headerConst.otherLink.productName}}
       </div>
       <div class="flex items-center justify-end w-full">
-        <button (click)="lazyLoadComp()" class="text-gray-600 focus:outline-none mx-4 sm:mx-0">
+        <button (click)="cartService.toggle()" class="text-gray-600 focus:outline-none mx-4 sm:mx-0">
           <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -58,3 +58,4 @@
 </header>
 
 <ng-template #myRef></ng-template>
+<!-- <app-right-cart></app-right-cart> -->

@@ -9,8 +9,8 @@ export const headerConst = {
       link: '/product',
     },
     {
-      name: 'Categories',
-      link: '/',
+      name: 'Post',
+      link: '/post-list',
     },
     {
       name: 'Contact',

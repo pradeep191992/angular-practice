@@ -1,3 +1,4 @@
+import { RightCartModule } from './../modules/right-cart/right-cart.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -13,7 +14,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderComponent,

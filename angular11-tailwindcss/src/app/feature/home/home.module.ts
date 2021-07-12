@@ -1,3 +1,4 @@
+import { ProductCardModule } from './../../modules/product-card/product-card.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +14,7 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ]
 })
 export class HomeModule { }

@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from './product-card.component';
@@ -9,7 +10,14 @@ import { ProductCardComponent } from './product-card.component';
     ProductCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule
+  ],
+  exports: [
+    ProductCardComponent
+  ],
+  bootstrap: [
+    ProductCardComponent
   ]
 })
 export class ProductCardModule { }

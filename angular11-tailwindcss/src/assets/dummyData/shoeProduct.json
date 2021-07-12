@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "price": 25,
+    "title": "Puma Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 45,
+    "title": "Nike Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 35,
+    "title": "Adidas Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 25,
+    "title": "Asics Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 25,
+    "title": "Puma Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 45,
+    "title": "Nike Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 35,
+    "title": "Adidas Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 25,
+    "title": "Asics Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 25,
+    "title": "Puma Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 1,
+    "price": 45,
+    "title": "Nike Shoes",
+    "text": "The best shoes in the marketplace",
+    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  }
+  
+]
