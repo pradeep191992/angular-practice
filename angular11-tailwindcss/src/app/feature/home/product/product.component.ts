@@ -1,3 +1,4 @@
+import { AddtoCartService } from './../../../core/services/addto-cart.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,20 +7,36 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
+  
+    
+  arrayItem: string[] = [];
+  addCartObj = [];
 
-  constructor() { }
+
+  constructor(
+    public addToList: AddtoCartService,
+  ) { }
   @Input() item: any;
 
-  
-  // public get value() : string {
-  //   return this.shoeProduct
-  // }
-  
+  public addToCart(event: string) {
+    // this.addCartObj = event;
+    const brand = event;
+    // const proImage = event.featureImg;
+    // const proPrice = event.price;
+    // this.addCartObj = [ brandName: 'brand', proImage: 'proImage', proPrice: 'proPrice' ];
+
+    // localStorage.setItem('cart-product', stringify(addCartObj));
+    if (localStorage.getItem('itemJson') == null){
+      this.arrayItem.push(event);
+      localStorage.setItem('itemJson', JSON.stringify(this.arrayItem));
+    }
+    console.log('brand', brand);
+    
+    // console.log('brand', addCartObj);
+  }
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   console.log(this.shoeProduct)
-    // }, 500);
+    // console.log(this.addToList.addToCart('Event'))
   }
 
 }

@@ -17,7 +17,7 @@ export class ProductCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('Data Emit', this.element)
+    // console.log('Data Emit', this.element)
     // this.cardData?.forEach((ele: any) => {
     //   this.image = ele.featureImg;
     //   this.title = ele.title;

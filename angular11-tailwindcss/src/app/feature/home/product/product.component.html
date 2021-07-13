@@ -1,12 +1,12 @@
-<div class="w-full h-full flex justify-center items-center">
+<div class="w-full h-full flex justify-center items-center" #productCard>
   <div class="container mx-auto max-w-sm w-full py-4">
     <div class="card flex flex-col justify-center p-6 bg-white rounded-lg shadow-md">
       <div class="prod-title">
-        <p class="text-2xl uppercase text-gray-900 font-bold">{{item.title}}</p>
+        <p id="brand" class="text-2xl uppercase text-gray-900 font-bold">{{item.title}}</p>
         <p class="uppercase text-sm text-gray-400">{{item.text}}</p>
       </div>
       <div class="prod-img flex items-center">
-        <img src="{{item.featureImg}}"
+        <img id="img" src="{{item.featureImg}}"
             class="object-cover object-center" />
       </div>
       <div class="prod-info grid gap-10">
@@ -35,9 +35,8 @@
           </ul>
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center text-gray-900">
-          <p class="font-bold text-xl">{{item.price}}$</p>
-          <button
-                  class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">Add
+          <p id="price" class="font-bold text-xl">{{item.price}}$</p>
+          <button (click)="addToList.addToCart(item)" class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">Add
             to cart</button>
         </div>
       </div>
