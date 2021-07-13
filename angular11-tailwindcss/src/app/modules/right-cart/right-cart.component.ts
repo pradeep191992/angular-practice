@@ -1,4 +1,4 @@
-import { CartExpandService } from './../../services/cart-expand.service';
+import { CartExpandService } from '../../core/services/services/cart-expand.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({

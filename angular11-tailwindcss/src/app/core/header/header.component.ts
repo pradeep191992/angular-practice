@@ -1,6 +1,6 @@
 import { headerConst } from './constants/header.constant';
-import { CartExpandService } from './../../services/cart-expand.service';
 import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver, ViewChild, AfterViewInit } from '@angular/core';
+import { CartExpandService } from '../services/services/cart-expand.service';
 
 
 @Component({
@@ -24,15 +24,15 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
 
-  // loadmodule() {
-  //   if (this.loadComp) {
-  //     this.lazyLoadComp();
-  //   }
-  //   this.cartService.toggle();
-  // }
+  loadmodule() {
+    this.lazyLoadComp();
+    setTimeout(() => {
+      this.cartService.toggle();
+    }, 100);
+  }
 
   ngAfterViewInit(): void {
-    this.lazyLoadComp();
+    // this.lazyLoadComp();
   }
 
   async lazyLoadComp () {
