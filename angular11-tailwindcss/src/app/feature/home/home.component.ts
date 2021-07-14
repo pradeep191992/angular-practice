@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(
     private homeService: HomeService,
     private resolver: ComponentFactoryResolver,
-    // public productsRef: ViewContainerRef
     ) { }
   
   ngOnInit(): void {

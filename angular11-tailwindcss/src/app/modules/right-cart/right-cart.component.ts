@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./right-cart.component.scss']
 })
 export class RightCartComponent implements OnInit {
-  totalAmount = '';
+  totalAmount = 0;
   
 
   constructor(
@@ -19,15 +19,17 @@ export class RightCartComponent implements OnInit {
 
   ngOnInit(): void {
     this.addtoCardService.getData();
-    // this.addtoCardService.arrayItem.forEach((element) => {
-    //   this.totalAmount = element;
-    //   console.log(this.totalAmount , 'element');
-    // });
+    this.getPrice();
+  }
+
+  getPrice(){
+    this.addtoCardService.arrayItem.forEach((element) => {
+      this.totalAmount += element.productPrice*element.quantity;
+    });
   }
 
   totalPrice(event: any) { 
-   console.log(event);
-    this.totalAmount + event;
+   this.totalAmount += event;
   }
 
 }

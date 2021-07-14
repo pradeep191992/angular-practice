@@ -1,3 +1,4 @@
+import { AddtoCartService } from './../../core/services/addto-cart.service';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -6,24 +7,16 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  title = '';
-  image = '';
-  price = '';
-  // @Input() cardData : any | undefined;
   
   @Input() element : any | undefined;
 
   @Output() dataServices = new EventEmitter();
-  constructor() { }
+  constructor(
+    public addTOCart: AddtoCartService,
+  ) { }
 
   ngOnInit(): void {
-    // console.log('Data Emit', this.element)
-    // this.cardData?.forEach((ele: any) => {
-    //   this.image = ele.featureImg;
-    //   this.title = ele.title;
-    //   this.price = ele.price;
-    //   // console.log(this.title)
-    // });
+
   }
 
   getCardData () {

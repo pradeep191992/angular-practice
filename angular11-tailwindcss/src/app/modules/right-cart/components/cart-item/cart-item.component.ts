@@ -10,30 +10,28 @@ export class CartItemComponent implements OnInit {
   @Input() item: any;
   @Input() i: any;
   @Output() totalPriceEvent = new EventEmitter();
-  count = 1;
 
   constructor(public addtoCartService: AddtoCartService) { }
 
   ngOnInit(): void {
+    
   }
 
-  addMultiple(){
-    this.count = ++this.count;
-    this.sendTotalPrice();
+  addMoreTOCart(){
+    this.item.quantity = ++this.item.quantity;
+    this.totalPriceEvent.emit(this.item.productPrice);
+    this.addtoCartService.updateQuantity(this.i, this.item.quantity)
   }
 
-  removeOneByOne(){
-    if (this.count !> 0) {
-      this.count = --this.count;
-      this.sendTotalPrice();
+  removeFromCart(){
+    if (this.item.quantity !> 0) {
+      this.item.quantity = --this.item.quantity;
+      this.totalPriceEvent.emit(-this.item.productPrice);
+      this.addtoCartService.updateQuantity(this.i, this.item.quantity)
+    } 
+    else if (this.item.quantity == 0) {
+      this.addtoCartService.removeItem(this.i)
     }
-    // else if (this.count === 0){
-    //   this.addtoCartService.removeItem(this.i)
-    // }
+    
   }
-
-  sendTotalPrice() {
-    this.totalPriceEvent.emit(this.item.proPrice)
-  }
-
 }

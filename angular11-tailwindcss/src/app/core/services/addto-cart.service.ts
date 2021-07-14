@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AddtoCartService {
-  arrayItem: string[] = [];
-  addCartObj: any = [];
+  arrayItem: any[] = [];
+  addCartObj: any = {};
   constructor() { }
 
   
@@ -25,7 +25,7 @@ export class AddtoCartService {
     const brand = event?.title;
     const proImage = event?.featureImg;
     const proPrice = event?.price;
-    this.addCartObj = {'id': id, 'brandName': brand, 'proImage': proImage, 'proPrice': proPrice };
+    this.addCartObj = {'id': id, 'brandName': brand, 'productImage': proImage, 'productPrice': proPrice, 'quantity': '1' };
     let local = localStorage.getItem('cartValues');
     if (local == null){
       this.arrayItem.push(this.addCartObj);
@@ -39,12 +39,22 @@ export class AddtoCartService {
     this.getData();
   }
 
-  removeItem(i: number) {
+  removeItem(i: any) {
     const local = localStorage.getItem('cartValues');
     if (local !== null) {
       this.arrayItem = JSON.parse(local);
       this.arrayItem.splice(i, 1);
-      localStorage.setItem('itemJson', JSON.stringify(this.arrayItem));
+      localStorage.setItem('cartValues', JSON.stringify(this.arrayItem));
+      this.getData();
+    }
+  }
+
+  updateQuantity(i: any, event: any) {
+    let local = localStorage.getItem('cartValues');
+    if (local !== null) {
+      this.arrayItem = JSON.parse(local);
+      this.arrayItem[i].quantity = event;
+      localStorage.setItem('cartValues', JSON.stringify(this.arrayItem));
       this.getData();
     }
   }

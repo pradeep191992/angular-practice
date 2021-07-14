@@ -3,5 +3,6 @@ export interface productCardModal {
   price?: string;
   title?: string;
   featureImg?: string;
-  text: string
+  text?: string,
+  quantity?: string,
 }
