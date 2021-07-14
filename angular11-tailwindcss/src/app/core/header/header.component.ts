@@ -1,3 +1,4 @@
+import { AddtoCartService } from './../services/addto-cart.service';
 import { CartExpandService } from './../services/cart-expand.service';
 import { headerConst } from './constants/header.constant';
 import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver, ViewChild, AfterViewInit } from '@angular/core';
@@ -17,11 +18,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   constructor(
     public cartService: CartExpandService, 
     private resolver: ComponentFactoryResolver,
+    public addtoCart: AddtoCartService,
     ) { }
 
 
 
   ngOnInit(): void {
+    this.addtoCart.getData();
   }
 
   loadmodule() {
