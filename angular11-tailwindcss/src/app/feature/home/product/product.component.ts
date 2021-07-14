@@ -1,5 +1,5 @@
 import { AddtoCartService } from './../../../core/services/addto-cart.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit {
   arrayItem: string[] = [];
   addCartObj = [];
 
-
+  @Output() productData = new EventEmitter()
   constructor(
     public addToList: AddtoCartService,
   ) { }
@@ -20,6 +20,9 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+  sendData(){
+    this.productData.emit(this.item)
   }
 
 }

@@ -6,3 +6,20 @@ export interface productCardModal {
   text?: string,
   quantity?: string,
 }
+export class Product { 
+ 
+  constructor(
+    public productID:number,    
+    public name: string ,   
+    public price:number
+    ) {
+      this.productID = this.productID;
+      this.name = this.name;
+      this.price = this.price;
+  }
+
+  // productID:number ;
+  // name: string ;
+  // price:number;
+
+}
