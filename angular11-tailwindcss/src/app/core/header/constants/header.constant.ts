@@ -6,7 +6,7 @@ export const headerConst = {
     },
     {
       name: 'Shop',
-      link: '/product',
+      link: '/checkout',
     },
     {
       name: 'Post',

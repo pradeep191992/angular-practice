@@ -1,5 +1,5 @@
+import { AddtoCartService } from './../../../core/services/addto-cart.service';
 import { productCardModal } from './../../../modal/product-card.modal';
-import { HomeService } from './../../home/home.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,32 +8,30 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product-head.component.scss']
 })
 export class ProductHeadComponent implements OnInit {
-  @Input() title: any;
-  productCardData: productCardModal | any;
-  product: any;
-  constructor(
-    private homeService: HomeService,
-  ) { }
+  @Input() product: productCardModal[] | any;
+  constructor( public addtoCart: AddtoCartService ) { }
 
   ngOnInit(): void {
+    this.addtoCart.getData();
     setTimeout(() => {
-      this.singleCard();
+      this.product.quantity = 1;
     }, 100);
-  }
 
-  singleCard() {
-    // this.title = this.activateRouter.snapshot.paramMap.get('title');
-    this.homeService.getShoeProducts().subscribe(data => {
-      this.product = data;
-      this.product.forEach((element: any) => {
-        if (element.title == this.title) {
-          this.productCardData = element;
-          
-          // console.log(this.productCardData);
-        }
-      });
-    });
   }
   
+  addMoreTOCart(){
+    this.product.quantity = ++this.product.quantity;
+    // this.totalPriceEvent.emit(this.product.productPrice);
+    this.addtoCart.updateQuantity(null, this.product.quantity)
+  }
+
+  removeFromCart(){
+    if (this.product.quantity !> 0) {
+      this.product.quantity = --this.product.quantity;
+      // this.totalPriceEvent.emit(-this.item.productPrice);
+      this.addtoCart.updateQuantity(null, this.product.quantity)
+    } 
+    
+  }
 
 }

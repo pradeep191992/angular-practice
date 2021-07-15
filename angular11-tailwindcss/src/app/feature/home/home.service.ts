@@ -1,14 +1,16 @@
 import { Product, productCardModal } from './../../modal/product-card.modal';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { observable, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+// import { map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HomeService {
   url = "./../assets/dummyData/";
-  product: productCardModal[] | any;
+  product: Observable<productCardModal[]> | any;
   
   singleItem = {};
   constructor(
@@ -23,19 +25,23 @@ export class HomeService {
     return this.http.get(this.url+'product.json');
   }
 
-  // getSingleProduct(title: any) {
-  //   this.getProducts().subscribe(data => {
-  //     this.product = data;
-  //     this.product.forEach((element: any) => {
-  //       if (element.title == title) {
-  //         this.singleItem = element;
-  //       }
-  //     });
-  //   });
-  //   // console.log(title);
-  //   // return this.product.find((p: any) => p.title==title);
+  getSingleProduct(id: any) {
+    // this.getProducts().subscribe(data => {
+    //   this.product = data;
+    //   this.product.forEach((element: any) => {
+    //     if (element.title == title) {
+    //       this.singleItem = element;
+    //     }
+    //   });
+    // });
+     return this.http.get(this.url+'shoeProduct.json').pipe( map(
+      (_response: any) => <productCardModal[]>_response));
+    // this.getShoeProducts();
+    // console.log(title);
     
-  //   // console.log(this.product);
-  // }
+    // return this.product.find((p: any) => p.title==title);
+    
+    // console.log(this.product);
+  }
 
 }
