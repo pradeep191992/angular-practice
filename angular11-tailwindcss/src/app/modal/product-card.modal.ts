@@ -1,9 +1,9 @@
 export interface productCardModal {
   id?: number;
   price?: string;
-  title?: string;
-  featureImg?: string;
-  text?: string,
+  brandName?: string;
+  imgSrc?: string;
+  title?: string,
   quantity?: string,
 }
 export class Product { 

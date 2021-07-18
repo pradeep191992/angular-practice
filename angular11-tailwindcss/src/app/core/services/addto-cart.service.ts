@@ -22,8 +22,8 @@ export class AddtoCartService {
 
   addToCart(event: productCardModal) {
     const id = event?.id;
-    const brand = event?.title;
-    const proImage = event?.featureImg;
+    const brand = event?.brandName;
+    const proImage = event?.imgSrc;
     const proPrice = event?.price;
     this.addCartObj = {'id': id, 'brandName': brand, 'productImage': proImage, 'productPrice': proPrice, 'quantity': '1' };
     let local = localStorage.getItem('cartValues');

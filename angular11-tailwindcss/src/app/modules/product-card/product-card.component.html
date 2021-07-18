@@ -1,6 +1,7 @@
-<a [routerLink]="['/product', element.id]">
+<!-- <a [routerLink]="['/product', element.brandName | lowercase]" [queryParams]="{'id': element.id}">
   <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden" >
-    <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('{{element.featureImg}}')">
+    {{element.imgSRC}}
+    <div class="flex items-end justify-end h-56 w-full bg-contain bg-no-repeat bg-center" style="background-image: url('{{element.imgSrc}}')">
       <button (click)="addTOCart.addToCart(element)" class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
         <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           viewBox="0 0 24 24" stroke="currentColor">
@@ -10,8 +11,55 @@
       </button>
     </div>
     <div class="px-5 py-3">
-      <h3 class="text-gray-700 uppercase">{{element.title}}</h3>
+      <h3 class="text-gray-700 uppercase">{{element.brandName}}</h3>
       <span class="text-gray-500 mt-2">${{element.price}}</span>
     </div>
   </div>
- </a>
+ </a> -->
+
+ <a [routerLink]="['/product', element.title | lowercase ]" [queryParams]="{'id': element.id}">
+  <div class="w-full h-full flex justify-center items-center" #productCard>
+    <div class="container mx-auto max-w-sm w-full py-4">
+      <div class="card flex flex-col justify-center p-6 bg-white rounded-lg shadow-md">
+        <div class="prod-title">
+          <p id="brand" class="text-2xl uppercase text-gray-900 font-bold">{{element.brandName}}</p>
+          <p class="uppercase text-sm text-gray-400">{{element.title}}</p>
+        </div>
+        <div class="prod-img flex items-center" [ngClass]="(!element.text? 'h-32 m-6' : '')">
+          <img id="img" src="{{element.imgSrc}}" class=" object-center h-full w-full" [ngClass]="(!element.title? 'object-cover' : 'object-contain')" />
+        </div>
+        <div class="prod-info grid gap-10">
+          <div *ngIf="element.text">
+            <ul class="flex flex-row justify-center items-center">
+              <li class="mr-4 last:mr-0">
+                <span class="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
+                  <a href="#blue" class="block w-6 h-6 bg-blue-900 rounded-full"></a>
+                </span>
+              </li>
+              <li class="mr-4 last:mr-0">
+                <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                  <a href="#yellow" class="block w-6 h-6 bg-yellow-500 rounded-full"></a>
+                </span>
+              </li>
+              <li class="mr-4 last:mr-0">
+                <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                  <a href="#red" class="block w-6 h-6 bg-red-500 rounded-full"></a>
+                </span>
+              </li>
+              <li class="mr-4 last:mr-0">
+                <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                  <a href="#green" class="block w-6 h-6 bg-green-500 rounded-full"></a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-center text-gray-900">
+            <p id="price" class="font-bold text-xl">{{element.price}}$</p>
+            <button (click)="addTOCart.addToCart(element)" class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">Add
+              to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>

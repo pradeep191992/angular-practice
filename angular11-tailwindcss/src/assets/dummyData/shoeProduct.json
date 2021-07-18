@@ -1,121 +1,310 @@
 [
   {
     "id": 1,
-    "price": 25,
-    "title": "Puma Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+    "price": "₹09",
+    "title": "DRAGON Walking Shoes For Men",
+    "brandName": "LANCER",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k5wse4w0/shoe/w/g/h/dragon-7-lancer-navy-original-imafzhz9gr2cjmxx.jpeg?q=50"
   },
   {
     "id": 2,
-    "price": 45,
-    "title": "Nike Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/kerfl3k0-0/shoe/j/4/q/cd0225-010nike-nike-ozone-blue-photon-dust-obsidian-original-imafvd6ncqhnfqcc.jpeg?q=50"
+    "price": "379",
+    "title": "Casual Sneakers Shoes For Men Sneakers For Men",
+    "brandName": "Robbie jones",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kex5ci80/shoe/l/o/d/lbb51-robbie-jones-white-original-imafvhzsf5kxbzgf.jpeg?q=50"
   },
   {
     "id": 3,
-    "price": 35,
-    "title": "Adidas Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/kpsnzww0/shoe/c/o/d/7-dbi17-7-adidas-ftwwht-cgreen-cblack-original-imag3y7fgywhcyws.jpeg?q=50"
+    "price": "290",
+    "title": "Running Shoes For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kbtp0280/shoe/c/k/k/gm1251-43-good-minar-black-original-imaft34ej4zx2z63.jpeg?q=50"
   },
   {
     "id": 4,
-    "price": 25,
-    "title": "Asics Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/jz1l7rk0/shoe/h/2/j/too1b-8-asics-directoire-blue-black-hot-orange-original-imafj5avt2hpdfeb.jpeg?q=50"
+    "price": "298",
+    "title": "Fashionable Mens Black Sports Shoes For Running, Gyming...",
+    "brandName": "JK PORT",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k77xx8w0/shoe/d/f/v/lac5050-6-layasa-black-original-imafpgy4pg4grrhd.jpeg?q=50"
   },
   {
     "id": 5,
-    "price": 25,
-    "title": "Puma Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+    "price": "₹39",
+    "title": "wndr-13 sports shoes for men | Latest Stylish Casual sp...",
+    "brandName": "ASIAN",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jur9nrk0/shoe/k/b/a/wonder-1313-7-asian-grey-orange-original-imaffbmzjc5hmagy.jpeg?q=50"
   },
   {
     "id": 6,
-    "price": 45,
-    "title": "Nike Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/kerfl3k0-0/shoe/j/4/q/cd0225-010nike-nike-ozone-blue-photon-dust-obsidian-original-imafvd6ncqhnfqcc.jpeg?q=50"
+    "price": "525",
+    "title": "Combo Pack of 2 Sports Shoes Running Shoes For Men",
+    "brandName": "Birde",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kqidx8w0/shoe/i/4/n/6-brd-406-300-blue-6-birde-blue-original-imag4g8cmfkfzkjg.jpeg?q=50"
   },
   {
     "id": 7,
-    "price": 35,
-    "title": "Adidas Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/kpsnzww0/shoe/c/o/d/7-dbi17-7-adidas-ftwwht-cgreen-cblack-original-imag3y7fgywhcyws.jpeg?q=50"
+    "price": "279",
+    "title": "Mesh Running Shoes ,Cricket Shoes Running Shoes For Men...",
+    "brandName": "MILESWALKER",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k5bcscw0pkrrdj/shoe/g/2/h/8-mw-325-black-mileswalker-original-imafgffhgw2kgbqk.jpeg?q=50"
   },
   {
     "id": 8,
-    "price": 25,
-    "title": "Asics Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/jz1l7rk0/shoe/h/2/j/too1b-8-asics-directoire-blue-black-hot-orange-original-imafj5avt2hpdfeb.jpeg?q=50"
+    "price": "759",
+    "title": "Speed Set of 5 Pairs Sneakers Outdoors Casuals for Men ...",
+    "brandName": "Chevit",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kg9qbgw0-0/shoe/b/5/d/pn-168-169-170-171-172-8-chevit-multicolor-original-imafwjjf3dzyg6wf.jpeg?q=50"
   },
   {
     "id": 9,
-    "price": 25,
-    "title": "Puma Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+    "price": "298",
+    "title": "Running Shoes For Men",
+    "brandName": "PORT",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kbtp0280/shoe/c/k/k/gm1251-43-good-minar-black-original-imaft34ej4zx2z63.jpeg?q=50"
   },
   {
     "id": 10,
-    "price": 45,
-    "title": "Nike Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://images.unsplash.com/photo-1578262825743-a4e402caab76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+    "price": "449",
+    "title": "SOCKS Running Shoes For Men",
+    "brandName": "Density",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kd69z0w0/shoe/g/6/m/socks-04-grey-density-grey-original-imafu4xyfffefd3z.jpeg?q=50"
   },
   {
     "id": 11,
-    "price": 35,
-    "title": "Adidas Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/kpsnzww0/shoe/c/o/d/7-dbi17-7-adidas-ftwwht-cgreen-cblack-original-imag3y7fgywhcyws.jpeg?q=50"
+    "price": "499",
+    "title": "wndr-11 sports shoes for men | Latest Stylish Casual sp...",
+    "brandName": "ASIAN",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kddf6a80pkrrdj/shoe/y/r/1/11-wonder-11-asian-original-imaex3gaw2rn6pae.jpeg?q=50"
   },
   {
     "id": 12,
-    "price": 25,
-    "title": "Asics Shoes",
-    "text": "The best shoes in the marketplace",
-    "featureImg": "https://rukminim1.flixcart.com/image/580/696/jz1l7rk0/shoe/h/2/j/too1b-8-asics-directoire-blue-black-hot-orange-original-imafj5avt2hpdfeb.jpeg?q=50"
+    "price": "298",
+    "title": "Mesh Sports Walking Shoes For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jj0bbm80/shoe/u/g/k/mrj857-7-aadi-blue-original-imaf6nujwtwnhzzj.jpeg?q=50"
   },
   {
     "id": 13,
-    "price": 125,
-    "title": "woman mix",
-    "featureImg": "https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=345&q=80",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=345&q=80"
+    "price": "474",
+    "title": "Casuals For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k6nxrbk0/shoe/k/h/n/mrj1241-6-aadi-black-original-imafp2hytr9nguv5.jpeg?q=50"
   },
   {
     "id": 14,
-    "price": 75,
-    "title": "Chanel",
-    "featureImg": "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80"
+    "price": "279",
+    "title": "Outdoors For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kb9ou4w0/shoe/o/4/0/shoes-for-men-black-36-badlav-black-original-imafghd4tsktkq7y.jpeg?q=50"
   },
   {
     "id": 15,
-    "price": 100,
-    "title": "Man Mix",
-    "featureImg": "https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+    "price": "240",
+    "title": "5011-Latest Collection Stylish Casual Loafer Sneakers S...",
+    "brandName": "World Wear Footwear",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/knni7ww0/shoe/g/v/9/10-5011-10-world-wear-footwear-red-original-imag2abfhwytz86r.jpeg?q=50"
   },
   {
     "id": 16,
-    "price": 225,
-    "title": "Classic watch",
-    "featureImg": "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    "price": "303",
+    "title": "Casuals For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kcjexe80/shoe/y/b/l/mrj1425-6-aadi-black-original-imaftndqswsq5kqz.jpeg?q=50"
   },
   {
     "id": 17,
-    "price": 650,
-    "title": "Mac Book",
-    "featureImg": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"
-  }  
+    "price": "199",
+    "title": "supr Loafers For Men",
+    "brandName": "Layasa",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kl6wx3k0/shoe/r/t/q/6-lf1555-6-layasa-gray-original-imagydd8e9zdkvub.jpeg?q=50"
+  },
+  {
+    "id": 18,
+    "price": "242",
+    "title": "Fit-Man Slip On Sneakers For Men",
+    "brandName": "BRUTON",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jo1s8sw0/shoe/2/m/f/bt-fit-man-red-cs-10-bruton-red-original-imafakhggn2guwdw.jpeg?q=50"
+  },
+  {
+    "id": 19,
+    "price": "448",
+    "title": "Stylish Casual Sports Shoe Sneakers For Women Sneakers ...",
+    "brandName": "MILESWALKER",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kljrvrk0/shoe/e/q/m/4-mw-1102-women-white-4-mileswalker-white-original-imagyn5egchvbmrh.jpeg?q=50"
+  },
+  {
+    "id": 20,
+    "price": "379",
+    "title": "Running Shoes For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k3lwuq80/shoe/z/v/h/mrj1324-6-aadi-black-original-imafmzfcjcjytgcf.jpeg?q=50"
+  },
+  {
+    "id": 21,
+    "price": "279",
+    "title": "Running Shoes Walking Shoes For Men",
+    "brandName": "GS",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kb9ou4w0/shoe/o/4/0/shoes-for-men-black-36-badlav-black-original-imafghd4tsktkq7y.jpeg?q=50"
+  },
+  {
+    "id": 22,
+    "price": "598",
+    "title": "Walking Shoes For Men",
+    "brandName": "Birde",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kqidx8w0/shoe/8/u/c/9-brd-394-406-9-birde-multicolor-original-imag4g89ypvuwvmc.jpeg?q=50"
+  },
+  {
+    "id": 23,
+    "price": "499",
+    "title": "Captain-13 Running shoes for boys | sports shoes for me...",
+    "brandName": "ASIAN",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k7z3afk0/shoe/t/y/c/captain-13cblkmrn-9-asian-black-original-imafq3dybcnkq7ux.jpeg?q=50"
+  },
+  {
+    "id": 24,
+    "price": "474",
+    "title": "Men Synthetic Colorful Casual Shoes Casuals For Men",
+    "brandName": "SHOVOC",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kcc9q4w0/shoe/h/v/0/fila-shoes-05-41-shovoc-05-white-original-imafthktsyawnndf.jpeg?q=50"
+  },
+  {
+    "id": 25,
+    "price": "355",
+    "title": "sports shoes for men | Latest Stylish Casual sneakers f...",
+    "brandName": "Layasa",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kg6vfrk0-0/shoe/l/t/i/ly5701-10-layasa-parot-original-imafwh3ttqhqxzwa.jpeg?q=50"
+  },
+  {
+    "id": 26,
+    "price": "499",
+    "title": "Century-04 Running shoes for boys | sports shoes for me...",
+    "brandName": "ASIAN",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k572gsw0/shoe/a/z/z/cenry-04cseagrnorng-10-asian-orange-original-imafmhjzxc8gfdbd.jpeg?q=50"
+  },
+  {
+    "id": 27,
+    "price": "379",
+    "title": "Walking Shoes For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k5vcya80/shoe/z/b/5/mrj1366-41-aadi-blue-original-imafz9xm47ngkqmn.jpeg?q=50"
+  },
+  {
+    "id": 28,
+    "price": "399",
+    "title": "Mesh Running Shoes ,Cricket Shoes Running Shoes For Men...",
+    "brandName": "MILESWALKER",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k5bcscw0pkrrdj/shoe/g/2/h/8-mw-325-black-mileswalker-original-imafgffhgw2kgbqk.jpeg?q=50"
+  },
+  {
+    "id": 29,
+    "price": "497",
+    "title": "Oxygen Running Shoes For Men",
+    "brandName": "BEEROCK",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jtrjngw0/shoe/y/4/8/oxygen-8-beerock-white-navy-original-imafewbhed7zmdpf.jpeg?q=50"
+  },
+  {
+    "id": 30,
+    "price": "2,197",
+    "title": "Downshifter 10 Running Shoes For Men",
+    "brandName": "NIKE",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kerfl3k0-0/shoe/g/h/c/ci9981-004nike-nike-black-white-anthracite-original-imafvd6nne3957gh.jpeg?q=50"
+  },
+  {
+    "id": 31,
+    "price": "399",
+    "title": "Loafers For Men",
+    "brandName": "T-ROCK",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kfwvcsw0-0/shoe/z/s/j/221-tan-deals4you-tan-original-imafw9ju97h79kte.jpeg?q=50"
+  },
+  {
+    "id": 32,
+    "price": "2,400",
+    "title": "Puma Rebound LayUp SL High Tops For Men",
+    "brandName": "PUMA",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jsyyufk0/shoe/y/c/y/369573-12-puma-white-black-original-imafef8ynhzfydxw.jpeg?q=50"
+  },
+  {
+    "id": 33,
+    "price": "499",
+    "title": "MEN's Boots For Men",
+    "brandName": "aadi",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jawthu80/shoe/n/c/n/gp001-10-aadi-beige-original-imafydr9mdgncwya.jpeg?q=50"
+  },
+  {
+    "id": 34,
+    "price": "349",
+    "title": "White Sneaker For Men's/Boy's Sneakers For Men",
+    "brandName": "Shoes Bank",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jmwch3k0/shoe/j/y/n/dg-292-white-blue-patti-10-digitrendzz-white-original-imaf9p36fkykfjqt.jpeg?q=50"
+  },
+  {
+    "id": 35,
+    "price": "240",
+    "title": "Latest Collection-1227 Stylish Casual Sports Sneakers F...",
+    "brandName": "World Wear Footwear",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k2hwivk0/shoe/z/v/z/1227-10-camfoot-black-original-imafhshvq9zbsbjr.jpeg?q=50"
+  },
+  {
+    "id": 36,
+    "price": "1,399",
+    "title": "Zod Runner V3 IDP Running Shoes For Men",
+    "brandName": "PUMA",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kfzq8i80-0/shoe/u/h/x/380815-9-puma-black-silver-original-imafwbwttkyxq5dh.jpeg?q=50"
+  },
+  {
+    "id": 37,
+    "price": "199",
+    "title": "supr Loafers For Men",
+    "brandName": "Layasa",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kmgn0cw0/shoe/m/m/x/9-a7040-blk-affan-traders-black-original-imagfcyfp7zhjkfk.jpeg?q=50"
+  },
+  {
+    "id": 38,
+    "price": "403",
+    "title": "Perfect Stylish Girls Casual Shoes Sneakers For Women",
+    "brandName": "Longwalk",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/k687wy80/shoe/g/t/y/hand-boot9612-3-creattoes-white-tan-original-imafjqnxeksh5sg4.jpeg?q=50"
+  },
+  {
+    "id": 39,
+    "price": "497",
+    "title": "Oxygen Running Shoes For Men",
+    "brandName": "BEEROCK",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/jtrjngw0/shoe/s/5/t/oxygen-9-beerock-full-black-original-imafeyfxzzzagu2f.jpeg?q=50"
+  },
+  {
+    "id": 40,
+    "price": "995",
+    "title": "Jungle Boots- Oil Stain & Water Resistant- Extra Cushio...",
+    "brandName": "Unistar",
+    "imgSrc": "https://rukminim1.flixcart.com/image/464/557/kcgk1ow0/shoe/3/b/d/71002-unistar-black-original-imaftkthtsmhzteb.jpeg?q=50"
+  },
+  {
+    "id": 41,
+    "price": "225",
+    "brandName": "Puma Shoes",
+    "title": "The best shoes in the marketplace",
+    "imgSrc": "https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"
+  },
+  {
+    "id": 42,
+    "price": "245",
+    "brandName": "Nike Shoes",
+    "title": "The best shoes in the marketplace",
+    "imgSrc": "https://rukminim1.flixcart.com/image/580/696/kerfl3k0-0/shoe/j/4/q/cd0225-010nike-nike-ozone-blue-photon-dust-obsidian-original-imafvd6ncqhnfqcc.jpeg?q=50"
+  },
+  {
+    "id": 43,
+    "price": "235",
+    "brandName": "Adidas Shoes",
+    "title": "The best shoes in the marketplace",
+    "imgSrc": "https://rukminim1.flixcart.com/image/580/696/kpsnzww0/shoe/c/o/d/7-dbi17-7-adidas-ftwwht-cgreen-cblack-original-imag3y7fgywhcyws.jpeg?q=50"
+  },
+  {
+    "id": 44,
+    "price": "225",
+    "brandName": "Asics Shoes",
+    "title": "The best shoes in the marketplace",
+    "imgSrc": "https://rukminim1.flixcart.com/image/580/696/jz1l7rk0/shoe/h/2/j/too1b-8-asics-directoire-blue-black-hot-orange-original-imafj5avt2hpdfeb.jpeg?q=50"
+  }
 ]

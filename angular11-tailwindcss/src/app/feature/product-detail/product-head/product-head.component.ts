@@ -8,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product-head.component.scss']
 })
 export class ProductHeadComponent implements OnInit {
-  @Input() product: productCardModal[] | any;
+  @Input() product: productCardModal | any;
+  quantity = 1;
   constructor( public addtoCart: AddtoCartService ) { }
 
   ngOnInit(): void {
-    this.addtoCart.getData();
+    // this.addtoCart.getData();
     setTimeout(() => {
       this.product.quantity = 1;
     }, 100);
@@ -22,14 +23,14 @@ export class ProductHeadComponent implements OnInit {
   addMoreTOCart(){
     this.product.quantity = ++this.product.quantity;
     // this.totalPriceEvent.emit(this.product.productPrice);
-    this.addtoCart.updateQuantity(null, this.product.quantity)
+    // this.addtoCart.updateQuantity(null, this.quantity)
   }
 
   removeFromCart(){
     if (this.product.quantity !> 0) {
       this.product.quantity = --this.product.quantity;
       // this.totalPriceEvent.emit(-this.item.productPrice);
-      this.addtoCart.updateQuantity(null, this.product.quantity)
+      // this.addtoCart.updateQuantity(null, this.quantity)
     } 
     
   }

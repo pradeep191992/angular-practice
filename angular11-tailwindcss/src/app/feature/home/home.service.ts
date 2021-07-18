@@ -22,26 +22,23 @@ export class HomeService {
   }
 
   getProducts() {
-    return this.http.get(this.url+'product.json');
+    return this.http.get(this.url+'similar-product.json');
   }
 
   getSingleProduct(id: any) {
-    // this.getProducts().subscribe(data => {
-    //   this.product = data;
-    //   this.product.forEach((element: any) => {
-    //     if (element.title == title) {
-    //       this.singleItem = element;
-    //     }
-    //   });
-    // });
-     return this.http.get(this.url+'shoeProduct.json').pipe( map(
-      (_response: any) => <productCardModal[]>_response));
-    // this.getShoeProducts();
-    // console.log(title);
-    
-    // return this.product.find((p: any) => p.title==title);
-    
-    // console.log(this.product);
+    return this.http.get(this.url+'shoeProduct.json').pipe( map(
+     (response: any) => {
+      return response.find((p: any) => p.id == id);
+     }));
+  }
+
+  searchProduct(value: string) {
+    return this.http.get(this.url+'shoeProduct.json').pipe( map(
+     (response: any) => {
+      return response.filter((data: any) =>
+        JSON.stringify(data).toLowerCase().includes(value.toLowerCase())
+      )
+     }));
   }
 
 }

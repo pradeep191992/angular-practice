@@ -26,11 +26,11 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
     ) { }
 
   ngOnInit(): void {
-    this.activateRouter.paramMap.subscribe((params: Params) => { 
+    this.activateRouter.queryParamMap.subscribe((params: Params) => { 
       let id = parseInt(params.get('id'));
       this.id = id
       this.homeService.getSingleProduct(this.id).subscribe(data => {
-        this.product = data.find((p:any) => p.id == this.id); 
+        this.product = data; 
       });   
     });
   }
@@ -45,7 +45,7 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    
+    this.loadMore ();
   }
 
   async productLazyLoad(ele: any) {

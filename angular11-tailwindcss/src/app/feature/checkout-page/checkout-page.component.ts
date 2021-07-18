@@ -13,7 +13,6 @@ export class CheckoutPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.addtoCardService.arrayItem)
     this.addtoCardService.getData();
     this.getPrice();
   }

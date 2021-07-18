@@ -5,7 +5,7 @@ export const headerConst = {
       link: '/',
     },
     {
-      name: 'Shop',
+      name: 'Place Order',
       link: '/checkout',
     },
     {

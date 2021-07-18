@@ -1,3 +1,5 @@
+import { productCardModal } from './../../modal/product-card.modal';
+import { HomeService } from './../../feature/home/home.service';
 import { AddtoCartService } from './../services/addto-cart.service';
 import { CartExpandService } from './../services/cart-expand.service';
 import { headerConst } from './constants/header.constant';
@@ -11,20 +13,36 @@ import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver, ViewChil
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   headerConst = headerConst;
+  hideProductList = false;
 
   @ViewChild('myRef', { read: ViewContainerRef }) 
   myRef!: ViewContainerRef;
 
+  @ViewChild ('searchFrom', {read: ViewContainerRef} ) searchField!: ViewContainerRef;
+  mySearch: productCardModal | any;
   constructor(
     public cartService: CartExpandService, 
     private resolver: ComponentFactoryResolver,
     public addtoCart: AddtoCartService,
+    public homeService: HomeService,
     ) { }
 
 
 
   ngOnInit(): void {
     this.addtoCart.getData();
+    // this.mySearch =
+  }
+  searchProduct(search: any) {
+    this.homeService.searchProduct(search.value).subscribe(data => {
+      this.hideProductList = true;
+      console.log(data);
+      this.mySearch = data;
+    });
+  }
+  hideList() {
+    this.searchField.element.nativeElement.value = '';
+    this.hideProductList = false;
   }
 
   loadmodule() {
