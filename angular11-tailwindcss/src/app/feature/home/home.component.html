@@ -1,7 +1,6 @@
 <!-- <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
-		<div
-			class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+		<div class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
 		</div>
 		<div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
@@ -28,67 +27,39 @@
 	</div>
 </div> -->
 
-<!-- This is an example component -->
-
-
-<!-- <div class="w-full flex items-center flex-col  bg-white">
-  <div class="flex flex-col bg-white shadow-md  rounded-md items-center">
-
-     <div class="flex items-center p-4">
-         <div data-placeholder class="mr-2 h-10 w-10  rounded-full overflow-hidden relative bg-gray-200">
-     
-             </div>
-         <div class="flex flex-col justify-between items-center">
-         <div data-placeholder class="mb-2 h-5 w-40 overflow-hidden relative bg-gray-200">
-         
-         </div>
-         </div>
-
-     </div>
-     <div data-placeholder class="h-52 w-full overflow-hidden relative bg-gray-200"></div>
-     
-     <div class="flex flex-col p-4">
-         <div class="flex">
-         <div data-placeholder  class=" flex h-5 w-5 overflow-hidden relative bg-gray-200 mr-1"></div>
-         <div data-placeholder  class="flex h-5 w-48 overflow-hidden relative bg-gray-200"></div>
-         </div>
-         <div class="flex mt-1">
-         <div data-placeholder  class="flex h-5 w-5 overflow-hidden relative bg-gray-200 mr-1"></div>
-         <div data-placeholder  class="flex h-5 w-48 overflow-hidden relative bg-gray-200"></div>
-         </div>
-     </div>
-     <div class="w-full h-px  overflow-hidden relative bg-gray-200 m-4"></div>
-     <div class="flex justify-between items-center p-4 w-full">
-         <div data-placeholder class="mr-2 h-10 w-16  overflow-hidden relative bg-gray-200">
-     
-             </div>
-       
-         <div data-placeholder class="mb-2 h-5 w-20 overflow-hidden relative bg-gray-200">
-         
-         </div>
-
-     </div>
- </div>
-</div>
-
-<style>
- [data-placeholder]::after {
-     content: " ";
-     box-shadow: 0 0 50px 9px rgba(254,254,254);
-     position: absolute;
-     top: 0;
-     left: -100%;
-     height: 100%; 
-     animation: load 1s infinite;
- }
- @keyframes load {
-     0%{ left: -100%}
-     100%{ left: 150%}
- }
-</style> -->
-
-
-<div class="grid px-6 gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-6">
+<div class="flex justify-between w-full relative px-6">
+  <div class="w-64">
+    <!-- component -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
+      <div class="flex flex-col w-full md:w-64 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0">
+        <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Filters</a>
+          <button class="rounded-lg rounded-lg focus:outline-none focus:shadow-outline" (click)="openToggle()">
+            Clear All
+          </button>
+        </div>
+        <div class=" md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
+          <h2 class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg uppercase">Category</h2>
+          <span class="block px-4 py-2 mt-2 text-xs font-semibold text-gray-900 cursor-pointer">Men's Footwear</span>
+        </div>
+        <div class=" md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
+          <h2 class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg uppercase">Price</h2>
+          <span class="block px-4 py-2 mt-2 text-xs font-semibold text-gray-900 cursor-pointer">$50-$500</span>
+        </div>
+        <div class=" md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
+          <h2 class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg uppercase">Brand</h2>
+          <select name="brand" id="brand" class="block px-4 py-2 my-2 text-xs font-semibold text-gray-900 cursor-pointer" #select (click)="brandFilter(select)">
+            <ng-container *ngFor="let item of searchBrandWise" >            
+              <option value="{{item.brandName}}" >{{item.brandName}}</option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full grid pl-4 gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-6">
     <app-product *ngFor="let item of shoeProduct" [item]="item"></app-product>
-    <ng-container #productsRef></ng-container>
+    <!-- <ng-container #productsRef></ng-container> -->
+  </div>
 </div>

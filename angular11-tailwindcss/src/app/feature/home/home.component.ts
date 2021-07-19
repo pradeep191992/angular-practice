@@ -10,6 +10,9 @@ import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolve
 export class HomeComponent implements OnInit, AfterViewInit {
   productCard: any;
   shoeProduct: any;
+  searchBrandWise: any;
+
+  open = false;
 
   @ViewChild('productsRef', {read: ViewContainerRef}) productsRefs!: ViewContainerRef;
   constructor(
@@ -20,7 +23,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.homeService.getShoeProducts().subscribe((data) => {
       this.shoeProduct = data;
+      this.searchBrandWise = data;
+      console.log(this.searchBrandWise)
+      // this.searchBrandWise = this.uniqBy(this.searchBrandWise, JSON.stringify)
     })
+  }
+
+  // uniqBy(a, key) {
+
+  // }
+
+  openToggle() {
+    this.open = !this.open;
   }
 
   ngAfterViewInit() {
@@ -37,5 +51,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const {ProductCardComponent} = await import('./../../modules/product-card/product-card.component');
     let productData = this.productsRefs.createComponent(this.resolver.resolveComponentFactory(ProductCardComponent));
     productData.instance.element = ele;
+  }
+
+
+  brandFilter(event: any){
+    event.onchange = () => {
+      // alert(this.value);
+      this.homeService.searchProduct(event.value).subscribe((data: any) => {
+        console.log(event.value);
+        this.shoeProduct = data;
+        console.log(data);
+      })
+    };
+    // console.log(event);
   }
 }

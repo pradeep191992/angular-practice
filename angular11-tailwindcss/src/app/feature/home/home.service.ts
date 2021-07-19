@@ -38,7 +38,18 @@ export class HomeService {
       return response.filter((data: any) =>
         JSON.stringify(data).toLowerCase().includes(value.toLowerCase())
       )
-     }));
+     }
+    ));
   }
+
+  // dataBrandWise(brand: string) {
+  //   return this.http.get(this.url+'shoeProduct.json').pipe( map(
+  //    (response: any) => {
+  //     return response.filter((data: any) =>
+  //       JSON.stringify(data).toLowerCase().includes(brand.toLowerCase())
+  //     )
+  //    }
+  //   ));
+  // }
 
 }
