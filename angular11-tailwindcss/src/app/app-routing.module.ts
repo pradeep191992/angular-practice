@@ -22,6 +22,11 @@ const routes: Routes = [
     pathMatch: 'full',
     loadChildren: () => import('./feature/post-list/post-list.module').then(m => m.PostListModule)
   },
+  {
+    path: 'about',
+    pathMatch: 'full',
+    loadChildren: () => import('./feature/about/about.module').then(m => m.AboutModule)
+  },
 ];
 
 @NgModule({

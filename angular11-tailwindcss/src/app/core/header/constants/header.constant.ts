@@ -18,7 +18,7 @@ export const headerConst = {
     },
     {
       name: 'About',
-      link: '/',
+      link: '/about',
     },
   ],
   otherLink: {
