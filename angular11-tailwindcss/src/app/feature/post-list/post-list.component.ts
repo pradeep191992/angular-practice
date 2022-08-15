@@ -1,6 +1,7 @@
 import { PostListService } from './service/post-list.service';
-import { AfterViewInit, Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, Inject, Injectable } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-list',
@@ -8,25 +9,47 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./post-list.component.scss']
 })
 @Injectable({ providedIn: 'root' })
-export class PostListComponent implements OnInit, AfterViewInit {
+export class PostListComponent implements OnInit {
   postData: any;
   removeData = false;
+  pageSize = 1
 
   @ViewChild('removeContainerRef', {read: ViewContainerRef}) removeContainerRef!: ViewContainerRef;
   constructor(
     public postService: PostListService,
     public resolver: ComponentFactoryResolver,
     @Inject(DOCUMENT) public document: Document,
+    public route: Router
     ) { }
 
   ngOnInit(): void {
-    
+    this.requestData(1, 0);
   }
   
-  ngAfterViewInit () {
-    this.postService.getPostData().subscribe((data =>  {
-      this.postData = data;
+
+  requestData(pageSize:any, oldRecord: any){
+    this.postService.getPostData(pageSize).subscribe(((data: any) =>  {
+      const newRecord = data;
+      const oldRecords = oldRecord;
+      this.postData = newRecord;
+      return this.postData = [...oldRecords, ...newRecord];
     }))
+  }
+
+  onScrollDown() {
+    this.pageSize ++;
+    if (this.pageSize > 1) {
+      this.requestData(this.pageSize, this.postData)
+    }
+  }
+
+  singlePost(item: any){
+    // this.route.navigateByUrl
+    this.postService.getSinglePost(item).subscribe((post) => {
+      console.log(post);
+    });
+    // const url = 'single-post';
+    // this.route.navigate(['single-post']);
   }
 
   removePost(i: any) {
