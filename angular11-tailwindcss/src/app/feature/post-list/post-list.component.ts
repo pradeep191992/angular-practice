@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 @Injectable({ providedIn: 'root' })
 export class PostListComponent implements OnInit {
-  postData: any;
+  postData: any = [];
   removeData = false;
   pageSize = 1
 
@@ -23,16 +23,15 @@ export class PostListComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.requestData(1, 0);
+    this.requestData(1, []);
   }
   
 
-  requestData(pageSize:any, oldRecord: any){
+  requestData(pageSize:any, oldRecord: []){
     this.postService.getPostData(pageSize).subscribe(((data: any) =>  {
       const newRecord = data;
       const oldRecords = oldRecord;
-      this.postData = newRecord;
-      return this.postData = [...oldRecords, ...newRecord];
+      this.postData = [...oldRecords, ...newRecord];
     }))
   }
 
