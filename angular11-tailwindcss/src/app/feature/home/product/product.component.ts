@@ -25,4 +25,8 @@ export class ProductComponent implements OnInit {
     this.productData.emit(this.item)
   }
 
+  addToCart(){
+    this.addToList.addToCart(this.item);
+  }
+  
 }

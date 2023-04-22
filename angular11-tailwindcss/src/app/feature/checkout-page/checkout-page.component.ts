@@ -7,18 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkout-page.component.scss']
 })
 export class CheckoutPageComponent implements OnInit {
-  totalAmount = 0;
+  totalCartPrice: any;
   constructor(
     public addtoCardService: AddtoCartService
   ) { }
 
   ngOnInit(): void {
-    this.addtoCardService.getData();
-    this.getPrice();
+    this.totalPrice();
   }
-  getPrice(){
-    this.addtoCardService.arrayItem.forEach((element) => {
-      this.totalAmount += element.productPrice*element.quantity;
-    });
-  }
+
+  totalPrice() {
+    this.totalCartPrice = localStorage.getItem('cartTotalValue')
+   }
+
 }

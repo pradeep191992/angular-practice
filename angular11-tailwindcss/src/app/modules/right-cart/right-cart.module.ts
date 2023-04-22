@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RightCartComponent } from './right-cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { QuantityModule } from '../quantity/quantity.module';
 
 
 
@@ -13,7 +14,8 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
   ],
   imports: [
     CommonModule,
-    CoreModule
+    CoreModule,
+    QuantityModule
   ],
   exports: [
     RightCartComponent,

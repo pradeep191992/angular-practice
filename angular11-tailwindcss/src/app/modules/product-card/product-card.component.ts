@@ -19,6 +19,10 @@ export class ProductCardComponent implements OnInit {
 
   }
 
+  addToCart(clickEvent: MouseEvent){
+    this.addTOCart.addToCart(this.element)
+  }
+
   getCardData () {
     this.dataServices.emit('Data Form Card Component');
   }

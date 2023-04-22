@@ -1,37 +1,30 @@
 import { AddtoCartService } from './../../../../core/services/addto-cart.service';
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cart-item',
   templateUrl: './cart-item.component.html',
   styleUrls: ['./cart-item.component.scss']
 })
-export class CartItemComponent implements OnInit {
-  @Input() item: any;
+export class CartItemComponent {
+  @Input() set item(value: any ){
+    this.cardValues = value;
+    this.productPrice = value.productPrice * value.quantity;
+  }
   @Input() i: any;
   @Output() totalPriceEvent = new EventEmitter();
 
+  productPrice!: any;
+  cardValues!: any;
+
   constructor(public addtoCartService: AddtoCartService) { }
 
-  ngOnInit(): void {
-    
-  }
-
-  addMoreTOCart(){
-    this.item.quantity = ++this.item.quantity;
-    this.totalPriceEvent.emit(this.item.productPrice);
-    this.addtoCartService.updateQuantity(this.i, this.item.quantity)
-  }
-
-  removeFromCart(){
-    if (this.item.quantity !> 0) {
-      this.item.quantity = --this.item.quantity;
-      this.totalPriceEvent.emit(-this.item.productPrice);
-      this.addtoCartService.updateQuantity(this.i, this.item.quantity)
-    } 
-    else if (this.item.quantity == 0) {
+  updateCartValues(data: any){
+    this.addtoCartService.updateQuantity(this.i, data)
+    if (data < 1) {
       this.addtoCartService.removeItem(this.i)
     }
-    
+    this.totalPriceEvent.emit()
   }
+
 }

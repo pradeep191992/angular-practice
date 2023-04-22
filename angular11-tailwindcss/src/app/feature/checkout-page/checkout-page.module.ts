@@ -4,16 +4,20 @@ import { CommonModule } from '@angular/common';
 
 import { CheckoutPageRoutingModule } from './checkout-page-routing.module';
 import { CheckoutPageComponent } from './checkout-page.component';
+import { QuantityModule } from './../../modules/quantity/quantity.module';
+import { CheckoutCardComponent } from './checkout-card/checkout-card.component';
 
 
 @NgModule({
   declarations: [
-    CheckoutPageComponent
+    CheckoutPageComponent,
+    CheckoutCardComponent
   ],
   imports: [
     CommonModule,
     CheckoutPageRoutingModule,
-    RightCartModule
+    RightCartModule,
+    QuantityModule
   ]
 })
 export class CheckoutPageModule { }

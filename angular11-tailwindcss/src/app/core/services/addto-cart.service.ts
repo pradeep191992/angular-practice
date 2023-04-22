@@ -20,12 +20,24 @@ export class AddtoCartService {
     }
   }
 
-  addToCart(event: productCardModal) {
+  getCartTotalAmount(totalAmount:any) {
+    let totalPrice = 0;
+    totalAmount.forEach((element: any) => {
+      totalPrice += element.productPrice*element.quantity;
+    });
+    localStorage.setItem('cartTotalValue', JSON.stringify(totalPrice))
+  }
+
+  addToCart(event: productCardModal, numberOfOrder?:any) {
+
     const id = event?.id;
     const brand = event?.brandName;
     const proImage = event?.imgSrc;
     const proPrice = event?.price;
-    this.addCartObj = {'id': id, 'brandName': brand, 'productImage': proImage, 'productPrice': proPrice, 'quantity': '1' };
+    const quantity:any = numberOfOrder ? numberOfOrder : 1;
+    
+    this.addCartObj = {'id': id, 'brandName': brand, 'productImage': proImage, 'productPrice': proPrice, 'quantity': quantity };
+
     let local = localStorage.getItem('cartValues');
     if (local == null){
       this.arrayItem.push(this.addCartObj);
@@ -36,6 +48,7 @@ export class AddtoCartService {
       this.arrayItem.push(this.addCartObj);
       localStorage.setItem('cartValues', JSON.stringify(this.arrayItem));
     }
+    this.getCartTotalAmount(this.arrayItem)
     this.getData();
   }
 
@@ -45,6 +58,7 @@ export class AddtoCartService {
       this.arrayItem = JSON.parse(local);
       this.arrayItem.splice(i, 1);
       localStorage.setItem('cartValues', JSON.stringify(this.arrayItem));
+      this.getCartTotalAmount(this.arrayItem)
       this.getData();
     }
   }
@@ -55,6 +69,7 @@ export class AddtoCartService {
       this.arrayItem = JSON.parse(local);
       this.arrayItem[i].quantity = event;
       localStorage.setItem('cartValues', JSON.stringify(this.arrayItem));
+      this.getCartTotalAmount(this.arrayItem);
       this.getData();
     }
   }

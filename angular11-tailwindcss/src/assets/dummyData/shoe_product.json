@@ -1,0 +1,372 @@
+{
+  "shoe_products": [
+    {
+      "product_id": "SHOEF001",
+      "product_name": "Nike Air Zoom Pegasus 38",
+      "brand": "Nike",
+      "category": "Men's Shoes",
+      "price": 12099,
+      "description": "The Nike Air Zoom Pegasus 38 is designed to provide a comfortable and responsive running experience for men. It features Nike Zoom Air technology for a responsive feel, a lightweight upper for breathability, and a durable outsole for traction on any surface.",
+      "image_url": "https://example.com/images/nike-air-zoom-pegasus-38.jpg"
+    },
+    {
+      "product_id": "SHOEF002",
+      "product_name": "Adidas Ultraboost DNA",
+      "brand": "Adidas",
+      "category": "Men's Shoes",
+      "price": 14999,
+      "description": "The Adidas Ultraboost DNA is a premium running shoe designed for men. It features responsive Boost cushioning for a comfortable ride, a flexible Primeknit upper for a snug fit, and a durable outsole for traction on any surface.",
+      "image_url": "https://example.com/images/adidas-ultraboost-dna.jpg"
+    },
+    {
+      "product_id": "SHOEF003",
+      "product_name": "Puma Future Rider Remix",
+      "brand": "Puma",
+      "category": "Men's Shoes",
+      "price": 5999,
+      "description": "The Puma Future Rider Remix is a retro-inspired sneaker designed for men. It features a comfortable EVA midsole, a durable rubber outsole, and a stylish synthetic leather upper.",
+      "image_url": "https://example.com/images/puma-future-rider-remix.jpg"
+    },
+    {
+      "product_id": "SHOEF004",
+      "product_name": "Reebok Classic Leather",
+      "brand": "Reebok",
+      "category": "Men's Shoes",
+      "price": 7999,
+      "description": "The Reebok Classic Leather is a timeless sneaker designed for men. It features a soft leather upper, a comfortable EVA midsole, and a durable rubber outsole.",
+      "image_url": "https://example.com/images/reebok-classic-leather.jpg"
+    },
+    {
+      "product_id": "SHOEF005",
+      "product_name": "Skechers Equalizer 4.0",
+      "brand": "Skechers",
+      "category": "Men's Shoes",
+      "price": 6499,
+      "description": "The Skechers Equalizer 4.0 is a versatile and comfortable sneaker designed for men. It features an Air Cooled Memory Foam insole for cushioning and support, a lightweight and flexible design, and a durable rubber outsole.",
+      "image_url": "https://example.com/images/skechers-equalizer-4.0.jpg"
+    },
+    {
+      "product_id": "SHOEF006",
+      "product_name": "Nike Air Max 270 React ENG",
+      "brand": "Nike",
+      "category": "Men's Shoes",
+      "price": 14499,
+      "description": "The Nike Air Max 270 React ENG is a stylish and comfortable sneaker designed for men. It features a lightweight and breathable upper, a responsive Nike React foam midsole, and a durable rubber outsole for traction on any surface.",
+      "image_url": "https://example.com/images/nike-air-max-270-react-eng.jpg"
+    },
+    {
+      "product_id": "SHOEF007",
+      "product_name": "Adidas Originals Superstar",
+      "brand": "Adidas",
+      "category": "Men's Shoes",
+      "price": 7999,
+      "description": "The Adidas Originals Superstar is a classic and iconic sneaker designed for men. It features a durable leather upper, a comfortable EVA midsole, and a rubber shell toe for added protection.",
+      "image_url": "https://example.com/images/adidas-originals-superstar.jpg"
+    },
+    {
+      "product_id": "SHOEF008",
+      "product_name": "Puma RS-Fast Tokyo",
+      "brand": "Puma",
+      "category": "Men's Shoes",
+      "price": 9999,
+      "description": "The Puma RS-Fast Tokyo is a modern and stylish sneaker inspired by Japanese street culture. It features a comfortable and supportive IMEVA midsole, a durable rubber outsole, and a stylish textile upper with suede and leather overlays.",
+      "image_url": "https://example.com/images/puma-rs-fast-tokyo.jpg"
+    },
+    {
+      "product_id": "SHOEF009",
+      "product_name": "Reebok Club C 85",
+      "brand": "Reebok",
+      "category": "Men's Shoes",
+      "price": 6999,
+      "description": "The Reebok Club C 85 is a classic and versatile sneaker designed for men. It features a comfortable EVA midsole, a durable rubber outsole, and a soft leather upper.",
+      "image_url": "https://example.com/images/reebok-club-c-85.jpg"
+    },
+    {
+      "product_id": "SHOEF010",
+      "product_name": "Skechers Go Run Mojo 2.0",
+      "brand": "Skechers",
+      "category": "Men's Shoes",
+      "price": 5499,
+      "description": "The Skechers Go Run Mojo 2.0 is a lightweight and comfortable running shoe designed for men. It features a responsive 5GEN midsole for cushioning and support, a breathable mesh upper, and a durable rubber outsole.",
+      "image_url": "https://example.com/images/skechers-go-run-mojo-2.0.jpg"
+    },
+    {
+      "product_id": "SHOEF011",
+      "product_name": "Nike Revolution 5",
+      "brand": "Nike",
+      "category": "Women's Shoes",
+      "price": 5195,
+      "description": "The Nike Revolution 5 is a comfortable and versatile running shoe designed for women. It features a lightweight and breathable mesh upper, a soft foam midsole for cushioning, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/nike-revolution-5.jpg"
+    },
+    {
+      "product_id": "SHOEF012",
+      "product_name": "Adidas Ultraboost 21",
+      "brand": "Adidas",
+      "category": "Women's Shoes",
+      "price": 17999,
+      "description": "The Adidas Ultraboost 21 is a premium running shoe designed for women. It features responsive Boost cushioning for a comfortable ride, a flexible Primeknit upper for a snug fit, and a durable outsole for traction on any surface.",
+      "image_url": "https://example.com/images/adidas-ultraboost-21.jpg"
+    },
+    {
+      "product_id": "SHOEF013",
+      "product_name": "New Balance Fresh Foam Roav",
+      "brand": "New Balance",
+      "category": "Women's Shoes",
+      "price": 5999,
+      "description": "The New Balance Fresh Foam Roav is a comfortable and versatile running shoe designed for women. It features a soft Fresh Foam midsole for cushioning, a durable rubber outsole for traction, and a stylish knit upper for a modern look.",
+      "image_url": "https://example.com/images/new-balance-fresh-foam-roav.jpg"
+    },
+    {
+      "product_id": "SHOEF014",
+      "product_name": "Puma Cali Sport",
+      "brand": "Puma",
+      "category": "Women's Shoes",
+      "price": 6999,
+      "description": "The Puma Cali Sport is a modern and stylish sneaker designed for women. It features a soft leather upper with perforations for breathability, a comfortable EVA midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/puma-cali-sport.jpg"
+    },
+    {
+      "product_id": "SHOEF015",
+      "product_name": "Reebok Classic Leather",
+      "brand": "Reebok",
+      "category": "Women's Shoes",
+      "price": 6499,
+      "description": "The Reebok Classic Leather is a timeless and iconic sneaker designed for women. It features a soft leather upper, a comfortable EVA midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/reebok-classic-leather.jpg"
+    },
+    {
+      "product_id": "SHOEF016",
+      "product_name": "Skechers D'Lites 3.0 Zenway",
+      "brand": "Skechers",
+      "category": "Women's Shoes",
+      "price": 4999,
+      "description": "The Skechers D'Lites 3.0 Zenway is a comfortable and stylish sneaker designed for women. It features a supportive Air Cooled Memory Foam insole, a durable rubber outsole, and a soft fabric upper with synthetic overlays.",
+      "image_url": "https://example.com/images/skechers-dlites-3.0-zenway.jpg"
+    },
+    {
+      "product_id": "SHOEF017",
+      "product_name": "Nike Air Zoom Pegasus 38",
+      "brand": "Nike",
+      "category": "Kids' Shoes",
+      "price": 3995,
+      "description": "The Nike Air Zoom Pegasus 38 is a comfortable and versatile running shoe designed for kids. It features a lightweight and breathable mesh upper, a responsive Zoom Air unit in the heel, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/nike-air-zoom-pegasus-38.jpg"
+    },
+    {
+      "product_id": "SHOEF018",
+      "product_name": "Adidas Fortarun",
+      "brand": "Adidas",
+      "category": "Kids' Shoes",
+      "price": 2999,
+      "description": "The Adidas Fortarun is a comfortable and durable running shoe designed for kids. It features a breathable mesh upper, a cushioned Cloudfoam midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/adidas-fortarun.jpg"
+    },
+    {
+      "product_id": "SHOEF019",
+      "product_name": "New BalanceFresh Foam Arishi v3",
+      "brand": "New Balance",
+      "category": "Kids' Shoes",
+      "price": 3999,
+      "description": "The New Balance Fresh Foam Arishi v3 is a comfortable and stylish running shoe designed for kids. It features a lightweight and breathable mesh upper, a soft Fresh Foam midsole for cushioning, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/new-balance-fresh-foam-arishi-v3.jpg"
+    },
+    {
+      "product_id": "SHOEF020",
+      "product_name": "Puma Smash v2 L Perf",
+      "brand": "Puma",
+      "category": "Kids' Shoes",
+      "price": 2499,
+      "description": "The Puma Smash v2 L Perf is a comfortable and stylish sneaker designed for kids. It features a soft leather upper with perforations for breathability, a cushioned SoftFoam+ sockliner, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/puma-smash-v2-l-perf.jpg"
+    },
+    {
+      "product_id": "SHOEF021",
+      "product_name": "Reebok Classic Leather Legacy",
+      "brand": "Reebok",
+      "category": "Kids' Shoes",
+      "price": 3999,
+      "description": "The Reebok Classic Leather Legacy is a timeless and iconic sneaker designed for kids. It features a soft leather upper, a comfortable EVA midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/reebok-classic-leather-legacy.jpg"
+    },
+    {
+      "product_id": "SHOEF022",
+      "product_name": "Skechers GOrun 600 Baxtux",
+      "brand": "Skechers",
+      "category": "Kids' Shoes",
+      "price": 2799,
+      "description": "The Skechers GOrun 600 Baxtux is a comfortable and stylish running shoe designed for kids. It features a lightweight and breathable mesh upper, a cushioned Goga Run insole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/skechers-gorun-600-baxtux.jpg"
+    },
+    {
+      "product_id": "SHOEF023",
+      "product_name": "Nike Air Max 2090",
+      "brand": "Nike",
+      "category": "Men's Shoes",
+      "price": 13995,
+      "description": "The Nike Air Max 2090 is a futuristic and stylish sneaker designed for men. It features a transparent mesh upper with reflective accents, a comfortable Air Max unit in the heel, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/nike-air-max-2090.jpg"
+    },
+    {
+      "product_id": "SHOEF024",
+      "product_name": "Adidas Ultraboost 21",
+      "brand": "Adidas",
+      "category": "Men's Shoes",
+      "price": 17999,
+      "description": "The Adidas Ultraboost 21 is a comfortable and responsive running shoe designed for men. It features a lightweight and breathable Primeknit upper, a responsive Boost midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/adidas-ultraboost-21.jpg"
+    },
+    {
+      "product_id": "SHOEF025","product_name": "New Balance Fresh Foam 1080v11",
+      "brand": "New Balance",
+      "category": "Men's Shoes",
+      "price": 13999,
+      "description": "The New Balance Fresh Foam 1080v11 is a comfortable and supportive running shoe designed for men. It features a breathable and seamless mesh upper, a plush Fresh Foam midsole for cushioning, and a durable blown rubber outsole for traction.",
+      "image_url": "https://example.com/images/new-balance-fresh-foam-1080v11.jpg"
+    },
+    {
+      "product_id": "SHOEF026",
+      "product_name": "Puma Rs-X3 Puzzle",
+      "brand": "Puma",
+      "category": "Men's Shoes",
+      "price": 7999,
+      "description": "The Puma Rs-X3 Puzzle is a comfortable and stylish sneaker designed for men. It features a mix of materials on the upper, including leather, suede, and mesh, a cushioned RS foam midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/puma-rs-x3-puzzle.jpg"
+    },
+    {
+      "product_id": "SHOEF027",
+      "product_name": "Reebok Nano X1",
+      "brand": "Reebok",
+      "category": "Men's Shoes",
+      "price": 11999,
+      "description": "The Reebok Nano X1 is a durable and versatile training shoe designed for men. It features a breathable and flexible knit upper, a cushioned Floatride Energy midsole, and a durable rubber outsole with a lug pattern for traction.",
+      "image_url": "https://example.com/images/reebok-nano-x1.jpg"
+    },
+    {
+      "product_id": "SHOEF028",
+      "product_name": "Skechers Go Run Ride 8 Hyper",
+      "brand": "Skechers",
+      "category": "Men's Shoes",
+      "price": 8499,
+      "description": "The Skechers Go Run Ride 8 Hyper is a comfortable and responsive running shoe designed for men. It features a breathable and seamless mesh upper, a cushioned Hyper Burst midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/skechers-go-run-ride-8-hyper.jpg"
+    },
+    {
+      "product_id": "SHOEF029",
+      "product_name": "Nike React Infinity Run Flyknit 2",
+      "brand": "Nike",
+      "category": "Women's Shoes",
+      "price": 13995,
+      "description": "The Nike React Infinity Run Flyknit 2 is a comfortable and supportive running shoe designed for women. It features a breathable and supportive Flyknit upper, a cushioned React foam midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/nike-react-infinity-run-flyknit-2.jpg"
+    },
+    {
+      "product_id": "SHOEF030",
+      "product_name": "Adidas Ultraboost 21",
+      "brand": "Adidas",
+      "category": "Women's Shoes",
+      "price": 17999,
+      "description": "The Adidas Ultraboost 21 is a comfortable and responsive running shoe designed for women. It features a lightweight and breathable Primeknit upper, a responsive Boost midsole, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/adidas-ultraboost-21.jpg"
+    },
+    {
+      "product_id": "SHOEF031",
+      "product_name": "Brooks Adrenaline GTS 21",
+      "brand": "Brooks",
+      "category": "Women's Shoes",
+      "price": 12999,
+      "description": "The Brooks Adrenaline GTS 21 is a comfortable and supportive running shoe designed for women. It features a breathable and flexible mesh upper, a cushioned DNA Loft midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/brooks-adrenaline-gts-21.jpg"
+    },
+    {
+      "product_id": "SHOEF032",
+      "product_name": "New Balance Fresh Foam 1080v11",
+      "brand": "New Balance",
+      "category": "Women's Shoes",
+      "price": 13999,
+      "description": "The New Balance Fresh Foam 1080v11 is a comfortable and supportive running shoe designed for women. It features a breathable and seamless mesh upper, a plush Fresh Foam midsole for cushioning, and a durable blown rubber outsole for traction.",
+      "image_url": "https://example.com/images/new-balance-fresh-foam-1080v11.jpg"
+    },
+    {
+      "product_id": "SHOEF033",
+      "product_name": "Puma Calibrate Runner",
+      "brand": "Puma",
+      "category": "Women's Shoes",
+      "price": 9999,
+      "description": "The Puma Calibrate Runner is a comfortable and stylish running shoe designed for women. It features a breathable and seamless mesh upper, a cushioned Calibrate midsole for responsiveness, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/puma-calibrate-runner.jpg"
+    },
+    {
+      "product_id": "SHOEF034",
+      "product_name": "Reebok Nano X1",
+      "brand": "Reebok",
+      "category": "Women's Shoes",
+      "price": 11999,
+      "description": "The Reebok Nano X1 is a durable and versatile training shoe designed for women. It features a breathable and flexible knit upper, a cushioned Floatride Energy midsole, and a durable rubber outsole with a lug pattern for traction.",
+      "image_url": "https://example.com/images/reebok-nano-x1.jpg"
+    },
+    {
+      "product_id": "SHOEF035",
+      "product_name": "Skechers Go Run Ride 8 Hyper",
+      "brand": "Skechers",
+      "category": "Women's Shoes",
+      "price": 8499,
+      "description": "The Skechers Go Run Ride 8 Hyper is a comfortable and responsive running shoe designed for women. It features a breathable and seamless mesh upper, a cushioned Hyper Burst midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/skechers-go-run-ride-8-hyper.jpg"
+    },
+    {
+      "product_id": "SHOEF036",
+      "product_name": "Asics Gel-Kayano 28",
+      "brand": "Asics",
+      "category": "Women's Shoes",
+      "price": 15999,
+      "description": "The Asics Gel-Kayano 28 is a comfortable and supportive running shoe designed for women. It features a breathable and flexible mesh upper, a cushioned FlyteFoam midsole, and a durable rubber outsole with a traction pattern",
+      "image_url": "https://example.com/images/asics-gel-kayano-28.jpg"
+    },
+    {
+      "product_id": "SHOEF037",
+      "product_name": "Nike Air Zoom Pegasus 38",
+      "brand": "Nike",
+      "category": "Men's Shoes",
+      "price": 10999,
+      "description": "The Nike Air Zoom Pegasus 38 is a comfortable and responsive running shoe designed for men. It features a breathable and seamless mesh upper, a cushioned Nike React foam midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/nike-air-zoom-pegasus-38.jpg"
+    },
+    {
+      "product_id": "SHOEF038",
+      "product_name": "Adidas Ultraboost 21",
+      "brand": "Adidas",
+      "category": "Men's Shoes",
+      "price": 17999,
+      "description": "The Adidas Ultraboost 21 is a comfortable and responsive running shoe designed for men. It features a breathable and flexible Primeknit upper, a cushioned Boost midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/adidas-ultraboost-21.jpg"
+    },
+    {
+      "product_id": "SHOEF039",
+      "product_name": "Brooks Adrenaline GTS 21",
+      "brand": "Brooks",
+      "category": "Men's Shoes",
+      "price": 12999,
+      "description": "The Brooks Adrenaline GTS 21 is a comfortable and supportive running shoe designed for men. It features a breathable and flexible mesh upper, a cushioned DNA Loft midsole, and a durable rubber outsole with a traction pattern.",
+      "image_url": "https://example.com/images/brooks-adrenaline-gts-21.jpg"
+    },
+    {
+      "product_id": "SHOEF040",
+      "product_name": "New Balance Fresh Foam 1080v11",
+      "brand": "New Balance",
+      "category": "Men's Shoes",
+      "price": 13999,
+      "description": "The New Balance Fresh Foam 1080v11 is a comfortable and supportive running shoe designed for men. It features a breathable and seamless mesh upper, a plush Fresh Foam midsole for cushioning, and a durable blown rubber outsole for traction.",
+      "image_url": "https://example.com/images/new-balance-fresh-foam-1080v11.jpg"
+    },
+    {
+      "product_id": "SHOEF041",
+      "product_name": "Puma Calibrate Runner",
+      "brand": "Puma",
+      "category": "Men's Shoes",
+      "price": 9999,
+      "description": "The Puma Calibrate Runner is a comfortable and stylish running shoe designed for men. It features a breathable and seamless mesh upper, a cushioned Calibrate midsole for responsiveness, and a durable rubber outsole for traction.",
+      "image_url": "https://example.com/images/puma-calibrate-runner.jpg"
+    }
+  ]
+}
