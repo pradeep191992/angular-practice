@@ -30,9 +30,9 @@ export class AddtoCartService {
 
   addToCart(event: productCardModal, numberOfOrder?:any) {
 
-    const id = event?.id;
-    const brand = event?.brandName;
-    const proImage = event?.imgSrc;
+    const id = event?.product_id;
+    const brand = event?.brand;
+    const proImage = event?.image_url;
     const proPrice = event?.price;
     const quantity:any = numberOfOrder ? numberOfOrder : 1;
     

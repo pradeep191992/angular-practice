@@ -23,6 +23,11 @@ const routes: Routes = [
     loadChildren: () => import('./feature/post-list/post-list.module').then(m => m.PostListModule)
   },
   {
+    path: 'post/:id',
+    pathMatch: 'full',
+    loadChildren: () => import('./feature/post-page/post-page.module').then(m => m.PostPageModule)
+  },
+  {
     path: 'about',
     pathMatch: 'full',
     loadChildren: () => import('./feature/about/about.module').then(m => m.AboutModule)

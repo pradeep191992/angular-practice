@@ -13,6 +13,8 @@ export class PostListComponent implements OnInit {
   postData: any = [];
   removeData = false;
   pageSize = 1
+  showSkeleton = true;
+  postPageUrl = '';
 
   @ViewChild('removeContainerRef', {read: ViewContainerRef}) removeContainerRef!: ViewContainerRef;
   constructor(
@@ -28,10 +30,12 @@ export class PostListComponent implements OnInit {
   
 
   requestData(pageSize:any, oldRecord: []){
+    this.showSkeleton = true;
     this.postService.getPostData(pageSize).subscribe(((data: any) =>  {
       const newRecord = data;
       const oldRecords = oldRecord;
       this.postData = [...oldRecords, ...newRecord];
+      this.showSkeleton = false;
     }))
   }
 
@@ -43,12 +47,7 @@ export class PostListComponent implements OnInit {
   }
 
   singlePost(item: any){
-    // this.route.navigateByUrl
-    this.postService.getSinglePost(item).subscribe((post) => {
-      console.log(post);
-    });
-    // const url = 'single-post';
-    // this.route.navigate(['single-post']);
+    this.route.navigate([`/post/${item}`]);
   }
 
   removePost(i: any) {

@@ -1,13 +1,13 @@
-<a [routerLink]="['/product', item.brandName | lowercase ]" [queryParams]="{'id': item.id}">
+<a [routerLink]="['/product', item.brand | lowercase ]" [queryParams]="{'id': item.product_id}">
   <div class="w-full h-full flex justify-center" #productCard>
     <div class="container mx-auto max-w-sm w-full py-4">
       <div class="card flex flex-col justify-center p-6 bg-white rounded-lg shadow-md">
         <div class="prod-title">
-          <p id="brand" class="text-2xl uppercase text-gray-900 font-bold">{{item.brandName}}</p>
-          <p class="uppercase text-sm text-gray-400">{{item.title}}</p>
+          <p id="brand" class="text-2xl uppercase text-gray-900 font-bold">{{item.brand}}</p>
+          <p class="uppercase text-sm text-gray-400">{{item.product_name}}</p>
         </div>
         <div class="prod-img flex items-center" [ngClass]="(!item.text? 'h-32 m-6' : '')">
-          <img id="img" src="{{item.imgSrc}}" class=" object-center h-full w-full" [ngClass]="(!item.title? 'object-cover' : 'object-contain')" />
+          <img id="img" src="{{item.image_url}}" class=" object-center h-full w-full" [ngClass]="(!item.product_name? 'object-cover' : 'object-contain')" />
         </div>
         <div class="prod-info grid gap-10">
           <div *ngIf="item.text">
@@ -44,3 +44,11 @@
     </div>
   </div>
 </a>
+
+<!-- brand
+category
+description
+image_url
+price
+product_id
+product_name -->

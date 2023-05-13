@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-signle-post',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignlePostComponent implements OnInit {
 
+  @Input() singleItem!: any;
+  @Input() index!: any;
+  @Output() removePost = new EventEmitter();
+  @Output() singlePost = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  removepost(event:any){
+    this.removePost.emit(event);
+  }
+  singlePostClicked(event: any){
+    this.singlePost.emit(event);
+  }
 }

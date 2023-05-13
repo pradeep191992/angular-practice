@@ -1,12 +1,10 @@
-import { PostList } from './../modal/post-list.modal';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PostListService {
+export class PostService {
   // url = 'https://jsonplaceholder.typicode.com/posts?userId=10';
   url = 'https://jsonplaceholder.typicode.com/photos?albumId=';
   singlePostUrl = 'https://jsonplaceholder.typicode.com/posts/';
@@ -14,8 +12,8 @@ export class PostListService {
     private http: HttpClient,
   ) { }
 
-  getPostData(pageSize: number) {
-    return this.http.get(this.url+pageSize);
-  }
 
+  getSinglePost(id: any) {
+    return this.http.get(this.singlePostUrl+id);
+  }
 }

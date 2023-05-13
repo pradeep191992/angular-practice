@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
   
-  @Input() element : any | undefined;
+  @Input() item : any | undefined;
 
   @Output() dataServices = new EventEmitter();
   constructor(
@@ -20,7 +20,7 @@ export class ProductCardComponent implements OnInit {
   }
 
   addToCart(clickEvent: MouseEvent){
-    this.addTOCart.addToCart(this.element)
+    this.addTOCart.addToCart(this.item)
   }
 
   getCardData () {

@@ -1,1 +1,13 @@
-<p>signle-post works!</p>
+<div class="w-full max-w-sm mx-auto rounded-md shadow-md" [id]="singleItem?.id" (click)="singlePostClicked(singleItem.id)">
+  <div class="single relative Items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('{{singleItem.url}}')">
+    <button (click)="removepost(index)" class="p-2 absolute right-0 bottom-0 mx-5 -mb-4 rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+      Remove Post
+    </button>
+  </div>
+  <div class="px-5 py-3">
+    <h3 class="text-gray-700 capitalize my-3">User Id {{singleItem?.id}}</h3>
+    <h3 class="text-gray-700 capitalize">{{singleItem?.title}}</h3>
+    <span class="text-gray-500 mt-2">{{singleItem.albumId}}</span>
+    <span class="text-gray-500 mt-2">{{singleItem?.body}}</span>
+  </div>
+</div>

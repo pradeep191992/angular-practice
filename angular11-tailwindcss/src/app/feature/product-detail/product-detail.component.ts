@@ -18,6 +18,7 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
   product: productCardModal | any;
   id: any;
   productCardData: any;
+  productId: any;
 
   constructor(
     private resolver: ComponentFactoryResolver,
@@ -26,18 +27,18 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
     ) { }
 
   ngOnInit(): void {
-    this.activateRouter.queryParamMap.subscribe((params: Params) => { 
-      let id = parseInt(params.get('id'));
-      this.id = id
-      this.homeService.getSingleProduct(this.id).subscribe(data => {
+
+    this.activateRouter.queryParamMap.subscribe(param => {
+      this.productId = param.get('id') || '';
+      this.homeService.getSingleProduct(this.productId).subscribe((data: any) => {
         this.product = data; 
-      });   
-    });
+      });  
+    })
   }
 
   loadMore () {
-    this.homeService.getProducts().subscribe((data) => {
-      this.productData = data;
+    this.homeService.getProducts().subscribe((data:any) => {
+      this.productData = data.shoeProducts;
       this.productData?.forEach((ele: any) => {
         this.productLazyLoad(ele);
       });
@@ -52,6 +53,6 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
     this.productRefs.clear();
     const {ProductCardComponent} = await import('./../../modules/product-card/product-card.component');
     let productCard = this.productRefs.createComponent(this.resolver.resolveComponentFactory(ProductCardComponent));
-    productCard.instance.element = ele
+    productCard.instance.item = ele
   }
 }

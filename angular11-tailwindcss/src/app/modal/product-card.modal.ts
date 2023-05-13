@@ -1,8 +1,8 @@
 export interface productCardModal {
-  id?: number;
+  product_id?: number;
   price?: string;
-  brandName?: string;
-  imgSrc?: string;
+  brand?: string;
+  image_url?: string;
   title?: string,
   quantity?: string,
 }
@@ -21,5 +21,13 @@ export class Product {
   // productID:number ;
   // name: string ;
   // price:number;
+
+// brand
+// category
+// description
+// image_url
+// price
+// product_id
+// product_name
 
 }

@@ -9,7 +9,7 @@ import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolve
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   productCard: any;
-  shoeProduct: any;
+  shoeProduct: any = [];
   searchBrandWise: any;
 
   open = false;
@@ -21,17 +21,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     ) { }
   
   ngOnInit(): void {
-    this.homeService.getShoeProducts().subscribe((data) => {
-      this.shoeProduct = data;
-      this.searchBrandWise = data;
+    this.homeService.getShoeProducts().subscribe((data: any) => {
+      this.shoeProduct = data.shoeProducts;
+      const filterdData = data.shoeProducts.reduce((mp1:any, obj:any) => mp1.set(obj.brand, obj), new Map())
+      this.searchBrandWise = [...filterdData.values()]
       console.log(this.searchBrandWise)
-      // this.searchBrandWise = this.uniqBy(this.searchBrandWise, JSON.stringify)
     })
   }
-
-  // uniqBy(a, key) {
-
-  // }
 
   openToggle() {
     this.open = !this.open;
@@ -39,18 +35,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
 
-    this.homeService.getProducts().subscribe((data) => {
-      this.productCard = data;
-      this.productCard?.forEach((ele: any) => {
-        this.getProduct(ele);
-      });
-    })
+      // this.homeService.getProducts().subscribe((data: any) => {
+      //   this.productCard = data.shoe_products;
+      //   this.productCard?.forEach((ele: any) => {
+      //     this.getProduct(ele);
+      //   });
+      // })
   }
 
   async getProduct(ele: any) {
     const {ProductCardComponent} = await import('./../../modules/product-card/product-card.component');
     let productData = this.productsRefs.createComponent(this.resolver.resolveComponentFactory(ProductCardComponent));
-    productData.instance.element = ele;
+    productData.instance.item = ele;
   }
 
 
